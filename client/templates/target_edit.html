@@ -1,0 +1,24 @@
+<template name="targetEdit">
+	<form class="main form page">
+		<div class="form-group">
+			<label class="control-label" for="name">Name</label>
+			<div class="controls">
+				<input name="name" id="name" type="text" value="{{name}}" placeholder="Jane Doe - Week 1" class="form-control">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label" for="url">Current Accuracy Multiplier</label>
+			<div class="controls">
+				<input name="current-multiplier" id="current-multiplier" type="text" value="{{currentMultiplier}}" placeholder="1.5" class="form-control">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label" for="title">Target Improvement Multiplier</label>
+			<div class="controls">
+				<input name="target-multiplier" id="target-multiplier" type="text" value="{{targetMultiplier}}" placeholder="2" class="form-control">
+			</div>
+		</div>
+		<input type="submit" value="Save" class="btn btn-primary"/>
+		<button class="btn btn-danger btn-delete">Delete</button>
+	</form>
+</template>

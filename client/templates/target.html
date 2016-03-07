@@ -1,0 +1,44 @@
+<template name="target">
+	<div class="target">
+		<div class="target-content">
+			<h3><a href="{{pathFor 'target'}}">{{name}}</a></h3>
+			<div class="author">Created by {{author}} on {{submitted}}</div>
+			<table class="table table-bordered table-top">
+				<tbody>
+					<tr>
+						<th>Current Accuracy Multiplier</th>
+						<td>{{currentMultiplier}}</td>
+					</tr>
+					<tr>
+						<th>Target Accuracy Multiplier</th>
+						<td>{{targetMultiplier}}</td>
+					</tr>
+					<tr>
+						<th>Per Day</th>
+						<td>{{perDay}}</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="table table-bordered">
+				<tbody>
+					<tr>
+						<th>Day</th>
+						<th>1</th>
+						<th>2</th>
+						<th>3</th>
+						<th>4</th>
+						<th>5</th>
+					</tr>
+					<tr>
+						<th>Target</th>
+						{{#each days}}
+							<td>{{this}}</td>
+						{{/each}}
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		{{#if ownPost}}<a role="button" class="btn btn-warning btn-edit" href="{{pathFor 'targetEdit'}}">Edit</a>{{/if}}
+	</div>
+</template>
