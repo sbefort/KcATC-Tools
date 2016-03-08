@@ -1,5 +1,5 @@
 Template.targetsList.helpers({
 	targets: function() {
-		return Targets.find({}, {sort: {submitted: -1}});
+		return Targets.find({userId: Meteor.userId()}, {sort: {submitted: -1}});
 	}
 });
