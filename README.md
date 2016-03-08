@@ -14,7 +14,7 @@ How to clone this project for your own use:
 
 Important note!
 
-There is one file missing from this project because it contains an email password.  If you want email to run correctly (for example, to get a forgotten password link), you need to add the file <code>/server/smtp.js</code> before deploying.  You will also need an email account with SMTP settings for the project to send email.  You can use Gmail for this.
+There is one file missing from this project because it contains an email password.  If you want email to run correctly (for example, to get a forgotten password link), you need to add the file <code>/server/smtp.js</code> before deploying.  You will also need an email account with SMTP settings for the project to send email.  You can use Gmail for this. For example, here are the contents of <code>/server/smtp.js</code> using a Gmail account:
 
 ```javascript
 Meteor.startup(function () {
