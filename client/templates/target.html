@@ -6,11 +6,11 @@
 			<table class="table table-bordered table-top">
 				<tbody>
 					<tr>
-						<th>Current Accuracy Multiplier</th>
+						<th>Accuracy Multiplier</th>
 						<td>{{currentMultiplier}}</td>
 					</tr>
 					<tr>
-						<th>Accuracy Improvement Multiplier</th>
+						<th>Accuracy Improvement Index</th>
 						<td>{{targetMultiplier}}</td>
 					</tr>
 					<tr>
@@ -24,11 +24,9 @@
 				<tbody>
 					<tr>
 						<th>Day</th>
-						<th>1</th>
-						<th>2</th>
-						<th>3</th>
-						<th>4</th>
-						<th>5</th>
+						{{#each week1}}
+							<th>{{add @index 1}}</th>
+						{{/each}}
 					</tr>
 					<tr>
 						<th>Target</th>
@@ -42,11 +40,9 @@
 				<tbody>
 					<tr>
 						<th>Day</th>
-						<th>6</th>
-						<th>7</th>
-						<th>8</th>
-						<th>9</th>
-						<th>10</th>
+						{{#each week2}}
+							<th>{{add @index 8}}</th>
+						{{/each}}
 					</tr>
 					<tr>
 						<th>Target</th>

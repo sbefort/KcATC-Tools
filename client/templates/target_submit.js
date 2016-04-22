@@ -3,6 +3,7 @@ Template.targetSubmit.events({
 		e.preventDefault();
 
 		var target = {
+			days: parseInt($(e.target).find('[name=days]').val(), 10),
 			name: $(e.target).find('[name=name]').val(),
 			currentMultiplier: parseFloat($(e.target).find('[name=current-multiplier]').val(), 10),
 			targetMultiplier: parseFloat($(e.target).find('[name=target-multiplier]').val(), 10)
